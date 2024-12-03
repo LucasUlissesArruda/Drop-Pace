@@ -18,8 +18,8 @@
                         <div class="box shadow bg-blur p-4" style="backdrop-filter: blur(6px); border-radius: 50px;">
                             <h3 class="mb-4 text-center fs-1">Faça seu Login</h3>
                             <div class="form-floating mb-3">
-                                <input type="text" name="cpf" class="form-control" id="cpf" placeholder="name@example.com">
-                                <label for="">Digite seu CPF</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+                                <label for="">Digite seu Email</label>
                                 </div>
                                 <div class="form-floating">
                                 <input type="password" name="senha" class="form-control" id="senha" placeholder="Password">
