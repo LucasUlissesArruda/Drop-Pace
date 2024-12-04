@@ -15,6 +15,13 @@
             <form action="includes/validar.php" class="mb-3" method="POST" >
                 <div class="row content d-flex justify-content-center align-items-center">
                     <div class="col-md-6">
+                <!-- Alerta de Mensagem -->
+              <?php 
+              if (isset($_GET['mensagem'])) {
+                $alertType = ($_GET['tipo'] == 'sucesso') ? 'alert-success' : 'alert-danger';
+                echo '<div class="alert ' . $alertType . '" role="alert">' . $_GET['mensagem'] . '</div>'; 
+              }
+              ?>
                         <div class="box shadow bg-blur p-4" style="backdrop-filter: blur(6px); border-radius: 50px;">
                             <h3 class="mb-4 text-center fs-1">Faça seu Login</h3>
                             <div class="form-floating mb-3">

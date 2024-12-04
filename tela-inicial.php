@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/banana-alexandre.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/teste.css">
+    <link rel="stylesheet" href="css/vamoqvamo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body style="background-color: black;"> 
@@ -54,7 +55,7 @@
                 <br>
                 <br>
                 <h3 style="color: white; text-align: center;">Principais vendas</h3>
-                <div class="container" style="padding-top: 0px;padding-bottom: 372px;">
+                <div class="container" style="padding-top: 0px;padding-bottom: 0; height: 729px;" >
                 <div class="card__container">
                     <article class="card__article">
                         <img style="width: 352px;height: 524px;" src="img/pexelsjpg.jpg" alt="image" class="card__img">
@@ -67,7 +68,7 @@
                     </article>
 
             <article class="card__article">
-               <img src="img/dunkzinho.jpg" alt="image" class="card__img">
+               <img style="height: 527px;" src="img/dunkzinho.jpg" alt="image" class="card__img">
 
                <div class="card__data">
                   <span class="card__description">Nike</span>
@@ -87,6 +88,86 @@
             </article>
          </div>
     </div>  
+    <h2 style="text-align: center; color:white;">Catalogo</h2>
+    <br><br>
+    <section class="container" style="padding-top: 0px;">
+
+         <div class="card__container">
+            <article>
+               <!-- CARD PRODUCT -->
+               <div class="card__product">
+                  <img style="width: 279px;" src="img/nikeairmax.jpg" alt="image" class="card__img">
+   
+                  <div>
+                     <h3 class="card__name">Nike Air Max 1</h3>
+                     <span class="card__price">R$ 599,00</span>
+                  </div>
+               </div>
+
+            </article>
+
+            <article>
+               <!-- CARD PRODUCT -->
+               <div class="card__product">
+                  <img style="width: 279px;" src="img/neckface.jpg" alt="image" class="card__img">
+   
+                  <div>
+                     <h3 class="card__name">Nike Dunk Neckface</h3>
+                     <span class="card__price">R$ 799,90</span>
+                  </div>
+               </div>
+            </article>
+
+            <article>
+               <!-- CARD PRODUCT -->
+                <div class="card__product">
+                   <img style="width: 279px;"   src="img/scott.jpg" alt="image" class="card__img">
+    
+                   <div>
+                      <h3 class="card__name">Travis Scott x Air Jordan 1 </h3>
+                      <span class="card__price">R$ 4.699,90</span>
+                   </div>
+                </div>
+            </article>
+
+            <article>
+               <!-- CARD PRODUCT -->
+                <div class="card__product">
+                   <img style="width: 279px;" src="img/adi.jpg" alt="image" class="card__img">
+    
+                   <div>
+                      <h3 class="card__name">Adidas Adi2000</h3>
+                      <span class="card__price">R$900,00</span>
+                   </div>
+                </div>
+            </article>
+
+            <article>
+               <!-- CARD PRODUCT -->
+                <div class="card__product">
+                   <img style="width: 279px;" src="img/airmaxx.jpg" alt="image" class="card__img">
+    
+                   <div>
+                      <h3 class="card__name">Nike Air Max Plus</h3>
+                      <span class="card__price">R$ 1.490,00</span>
+                   </div>
+                </div>
+            </article>
+
+            <article>
+               <!-- CARD PRODUCT -->
+                <div class="card__product">
+                   <img style="width: 279px;" src="img/dunkzada.jpg" alt="image" class="card__img">
+    
+                   <div>
+                      <h3 class="card__name">Nike Sb Dunk</h3>
+                      <span class="card__price">R$ 1.749,90</span>
+                   </div>
+                </div>
+            </article>
+         </div>
+      </section>
+      <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
