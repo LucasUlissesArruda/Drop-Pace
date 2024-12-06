@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drop Pace</title>
-    <link rel="stylesheet" href="css/style-telaincial.css">
-    <link rel="stylesheet" href="css/banana-alexandre.css">
-    <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/teste.css">
     <link rel="stylesheet" href="css/vamoqvamo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -167,7 +164,6 @@
             </article>
          </div>
       </section>
-      <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

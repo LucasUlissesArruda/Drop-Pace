@@ -1,10 +1,9 @@
 
-
-
   <style>
     body {
       margin: 0;
       padding: 0;
+      background-color: black;
     }
     .navbar-custom {
       padding: 1rem 2rem;
@@ -13,6 +12,9 @@
       color: white;
       font-size: 1.5rem;
       font-weight: bold;
+    }
+    ul {
+      gap: 25px;
     }
     .navbar-nav {
       flex: 1;
@@ -40,13 +42,16 @@
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container-fluid">
       <!-- Logo -->
-        <div style="font-size: 30px; color:white;" href="#">Drop Pace</div>
+       <a style="text-decoration: none;" href="tela-inicial.php">
+
+         <div style="font-size: 30px; color:white;">Drop Pace</div>
+       </a>
       
       <!-- Menu principal -->
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="#">Marcas</a>
+            <a class="nav-link" style="color: white;" href="TelaMarcas.php">Marcas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="color: white;"  href="#">Novidades</a>
