@@ -1,4 +1,6 @@
-
+ <?php 
+  session_start();
+ ?>
   <style>
     body {
       margin: 0;
@@ -51,22 +53,66 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="TelaMarcas.php">Marcas</a>
+          <?php
+            if(isset($_SESSION['NivelUsuarioLogado'])){
+              if ($_SESSION['NivelUsuarioLogado'] == 'Administrador') {
+                echo '<a class="nav-link" style="color: white;" href="TelaMarcas.php">Marcas</a>' ;
+              }
+            }
+          
+          ?>
+          <?php 
+          if(!isset($_SESSION['idUsuarioLogado'])){
+            echo '<a class="nav-link" style="color: white;" href="Listarmarcas.php">Marcas</a>';
+
+          }
+          
+          ?>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: white;"  href="#">Novidades</a>
+            <?php
+            if(isset($_SESSION['NivelUsuarioLogado'])){
+              if ($_SESSION['NivelUsuarioLogado'] == 'Administrador') {
+                echo '<a class="nav-link" style="color: white;"  href="TelaProdutos.php">Produtos</a>' ;
+              }
+            }
+          
+          ?>
+          <?php 
+          if(!isset($_SESSION['idUsuarioLogado'])){
+            echo '<a class="nav-link" style="color: white;"  href="Produtos.php">Produtos</a>';
+
+          }
+          
+          ?>
+
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: white;"  href="#">Calendário</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;"  href="#">Feed</a>
+            
+          <?php 
+          if(!isset($_SESSION['idUsuarioLogado'])){
+            echo '<a class="nav-link" style="color: white;"  href="#">Novidades</a>';
+
+          }
+          
+          ?>
+
+          
+          <?php
+            if(isset($_SESSION['NivelUsuarioLogado'])){
+              if ($_SESSION['NivelUsuarioLogado'] == 'Administrador') {
+                echo '<a class="nav-link" style="color: white;"  href="ListarVendas.php">Vendas</a>' ;
+              }
+            }
+          
+          ?>
+
           </li>
         </ul>
       </div>
       <?php 
 
-          session_start();
+          
 
           if(!isset($_SESSION['idUsuarioLogado'])){
             echo '<a href="login.php">
