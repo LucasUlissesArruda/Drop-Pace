@@ -20,7 +20,7 @@
         $_SESSION['idUsuarioLogado'] = $dados['idclientes'];
         $_SESSION['nomeUsuarioLogado'] = $dados['nomeCliente'];
 
-        //$_SESSION['NivelUsuarioLogado'] = $dados['TipoUsuarios'];
+        $_SESSION['NivelUsuarioLogado'] = $dados['TipoUsuario'];
 
         // Redireciona para a página principal (home)
         header("Location: ../tela-inicial.php");

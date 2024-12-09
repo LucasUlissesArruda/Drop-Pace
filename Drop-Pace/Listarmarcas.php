@@ -38,7 +38,7 @@
               <thead>
                 <tr>
                   <th scope="col">IdMarca</th>
-                  <th scope="col">Descricao</th>
+                  <th scope="col">Marcas</th>
                   <th scope="col">Editar/Excluir</th>
                 </tr>
               </thead>

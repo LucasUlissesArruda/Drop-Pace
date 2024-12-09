@@ -13,7 +13,7 @@
     $idCategoria = $_POST ['idCategoria'];
 
 
-    if ($idmarca == 0){
+    if ($idProdutos == 0){
         
         $sql2 = "SELECT * FROM produtos WHERE nomeProduto = '$nomeProduto'";
         $resultados = mysqli_query($conn, $sql2);

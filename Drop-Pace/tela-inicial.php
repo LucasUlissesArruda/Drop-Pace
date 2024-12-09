@@ -91,6 +91,9 @@
 
          <div class="card__container">
             <article>
+               <a href="nikeAirMax.php" style="text-decoration:none;">
+
+               
                <!-- CARD PRODUCT -->
                <div class="card__product">
                   <img style="width: 279px;" src="img/nikeairmax.jpg" alt="image" class="card__img">
@@ -100,10 +103,14 @@
                      <span class="card__price">R$ 599,00</span>
                   </div>
                </div>
+               </a>
 
             </article>
 
             <article>
+            <a href="dunk-neakFace.php" style="text-decoration:none;">
+
+               
                <!-- CARD PRODUCT -->
                <div class="card__product">
                   <img style="width: 279px;" src="img/neckface.jpg" alt="image" class="card__img">
@@ -113,9 +120,11 @@
                      <span class="card__price">R$ 799,90</span>
                   </div>
                </div>
+               </a>
             </article>
 
             <article>
+            <a href="travis.php" style="text-decoration:none;">
                <!-- CARD PRODUCT -->
                 <div class="card__product">
                    <img style="width: 279px;"   src="img/scott.jpg" alt="image" class="card__img">
@@ -125,9 +134,11 @@
                       <span class="card__price">R$ 4.699,90</span>
                    </div>
                 </div>
+</a>
             </article>
 
             <article>
+            <a href="adi.php" style="text-decoration:none;">
                <!-- CARD PRODUCT -->
                 <div class="card__product">
                    <img style="width: 279px;" src="img/adi.jpg" alt="image" class="card__img">
@@ -137,10 +148,12 @@
                       <span class="card__price">R$900,00</span>
                    </div>
                 </div>
+</a>
             </article>
 
             <article>
                <!-- CARD PRODUCT -->
+               <a href="max.php" style="text-decoration:none;">
                 <div class="card__product">
                    <img style="width: 279px;" src="img/airmaxx.jpg" alt="image" class="card__img">
     
@@ -149,9 +162,11 @@
                       <span class="card__price">R$ 1.490,00</span>
                    </div>
                 </div>
+</a>
             </article>
 
             <article>
+            <a href="dunkzin.php" style="text-decoration:none;">
                <!-- CARD PRODUCT -->
                 <div class="card__product">
                    <img style="width: 279px;" src="img/dunkzada.jpg" alt="image" class="card__img">
@@ -161,6 +176,7 @@
                       <span class="card__price">R$ 1.749,90</span>
                    </div>
                 </div>
+</a>
             </article>
          </div>
       </section>
