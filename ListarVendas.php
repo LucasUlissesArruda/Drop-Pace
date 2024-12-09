@@ -21,6 +21,8 @@
                         <th scope="col">ID Venda</th>
                         <th scope="col">Data da Venda</th>
                         <th scope="col">Cliente</th>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço Total</th>
                         <th scope="col">Desconto</th>
                         <th scope="col">Frete</th>
                         <th scope="col">Forma de Pagamento</th>
@@ -29,13 +31,15 @@
                 </thead>
                 <tbody>
                     <?php 
-                        // Consulta com JOIN para buscar os detalhes das vendas
                         $sql = "SELECT vendas.idvendas, vendas.dataVendas, clientes.nomeCliente AS nomeCliente, 
+                                produtos.nomeProduto AS nomeProduto, vendaProduto.preco AS precoProduto, 
                                 desconto.porcentagem AS descontoDesc, vendas.frete, formapagamento.descPagamento AS descricaoPagamento
                                 FROM vendas
                                 INNER JOIN clientes ON vendas.idClientes = clientes.idClientes
                                 LEFT JOIN desconto ON vendas.idDesconto = desconto.idDesconto
                                 INNER JOIN formapagamento ON vendas.idformapagamento = formapagamento.idformaPagamento
+                                INNER JOIN vendaProduto ON vendas.idvendas = vendaProduto.idvendas
+                                INNER JOIN produtos ON vendaProduto.idprodutos = produtos.idprodutos
                                 ORDER BY vendas.idvendas ASC";
 
                         $resultados = mysqli_query($conn, $sql);
@@ -44,12 +48,24 @@
                             // Formatar a data para o formato d/m/Y
                             $dataVendaFormatada = date("d/m/Y", strtotime($dados['dataVendas']));
 
+                            // Calcular o preço total
+                            $precoTotal = $dados['precoProduto'] - ($dados['precoProduto'] * ($dados['descontoDesc'] / 100)) + $dados['frete'];
+
+                            // Formatando o preço total como moeda (R$)
+                            $precoTotalFormatado = 'R$ ' . number_format($precoTotal, 2, ',', '.');
+
+                            // Formatando o preço do produto e o frete
+                            $precoProdutoFormatado = 'R$ ' . number_format($dados['precoProduto'], 2, ',', '.');
+                            $freteFormatado = 'R$ ' . number_format($dados['frete'], 2, ',', '.');
+
                             echo '<tr>
                                     <td>'.$dados['idvendas'].'</td>
                                     <td>'.$dataVendaFormatada.'</td>
                                     <td>'.$dados['nomeCliente'].'</td>
-                                    <td>'.$dados['descontoDesc'].'</td>
-                                    <td>R$ '.$dados['frete'].'</td>
+                                    <td>'.$dados['nomeProduto'].'</td>
+                                    <td>'.$precoTotalFormatado.'</td> <!-- Exibindo o preço total formatado -->
+                                    <td>'.$dados['descontoDesc'].'%</td>
+                                    <td>'.$freteFormatado.'</td> <!-- Exibindo o frete formatado -->
                                     <td>'.$dados['descricaoPagamento'].'</td>
                                     <td style="text-align: center;">
                                         <a class="btn btn-warning btn-sm" href="editarVenda.php?idvendas='.$dados['idvendas'].'">Editar</a>

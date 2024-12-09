@@ -158,11 +158,12 @@
 </style>
 
 <section class="product-container">
-    <img class="product-image" src="img/nikeairmax.jpg" alt="Tênis Modelo XYZ">
+    <img class="product-image" src="img/neckface.jpg" alt="Tênis Modelo XYZ">
 
     <div class="product-info">
-        <h1>Nike Air Max</h1>
-        <p class="price">R$ 699,90</p>
+        <h1>Nike Dunk Neckface</h1>
+        <p class="price">R$ 799,90</p>
+
 
         <div>
             <strong>Tamanhos:</strong>

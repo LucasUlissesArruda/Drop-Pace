@@ -158,11 +158,12 @@
 </style>
 
 <section class="product-container">
-    <img class="product-image" src="img/nikeairmax.jpg" alt="Tênis Modelo XYZ">
+    <img class="product-image" src="img/newbalance.jpg" alt="Tênis Modelo XYZ">
 
     <div class="product-info">
-        <h1>Nike Air Max</h1>
-        <p class="price">R$ 699,90</p>
+        <h1>New Balance 550 White Red Navy</h1>
+        <p class="price">R$ 799,99</p>
+
 
         <div>
             <strong>Tamanhos:</strong>

@@ -8,8 +8,9 @@
 </head>
 <body>
 <?php 
-    include_once("../Drop-Pace/includes/menu.php")
+    include_once("../Drop-Pace/includes/menu.php");
 ?> 
+
 <style>
     body {
         font-family: 'Roboto', sans-serif;
@@ -158,11 +159,11 @@
 </style>
 
 <section class="product-container">
-    <img class="product-image" src="img/nikeairmax.jpg" alt="Tênis Modelo XYZ">
+    <img class="product-image" src="img/scott.jpg" alt="Tênis Modelo XYZ">
 
     <div class="product-info">
-        <h1>Nike Air Max</h1>
-        <p class="price">R$ 699,90</p>
+        <h1>Travis Scott x Air Jordan 1</h1>
+        <p class="price">R$ 4699,90</p>
 
         <div>
             <strong>Tamanhos:</strong>

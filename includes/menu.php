@@ -1,6 +1,10 @@
- <?php 
-  session_start();
- ?>
+<?php
+// Verifica se a sessão já foi iniciada antes de chamar session_start()
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
+
   <style>
     body {
       margin: 0;
@@ -126,6 +130,9 @@
           }
 
       ?> 
+      
+      <img src="img/bolsa-de-compras.png" alt="">
+
     </div>
   </nav>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
