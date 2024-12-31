@@ -1,10 +1,18 @@
-Drop Pace
-Drop Pace é um sistema de e-commerce desenvolvido em PHP, voltado exclusivamente para a venda de tênis.
+# Drop Pace  
 
-Funcionalidades
-Cadastro e gerenciamento de produtos.
-Organização por categorias e marcas.
-Integração de formas de pagamento associadas às vendas.
-Interface simplificada e focada na experiência do usuário.
-Objetivo
-O projeto foi criado com o intuito de oferecer uma plataforma eficiente e intuitiva para consumidores interessados em adquirir tênis de forma prática e segura.
+**Drop Pace** é um sistema de e-commerce desenvolvido em PHP, focado na venda de tênis.  
+
+## Funcionalidades  
+- Cadastro e gerenciamento de produtos  
+- Organização por categorias e marcas  
+- Integração de formas de pagamento  
+
+## Objetivo  
+Oferecer uma plataforma simples e eficiente para a comercialização de tênis.  
+
+## Tecnologias  
+- PHP  
+- MySQL  
+- HTML e CSS  
+
+[Veja o projeto no GitHub](https://github.com/seu-repositorio)  
