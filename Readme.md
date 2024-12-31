@@ -13,6 +13,4 @@ Oferecer uma plataforma simples e eficiente para a comercialização de tênis.
 ## Tecnologias  
 - PHP  
 - MySQL  
-- HTML e CSS  
-
-[Veja o projeto no GitHub](https://github.com/seu-repositorio)  
+- HTML e CSS 
